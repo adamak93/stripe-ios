@@ -287,6 +287,18 @@ static NSString * const FileUploadURL = @"https://uploads.stripe.com/v1/files";
 
 @end
 
+#pragma mark - Connect Accounts
+
+@implementation STPAPIClient (ConnectAccounts)
+
+- (void)createTokenWithConnectAccount:(__unused id)obj completion:(__nullable STPTokenCompletionBlock)completion {
+    if (completion) {
+        completion(nil, nil);
+    }
+}
+
+@end
+
 #pragma mark - Upload
 
 @implementation STPAPIClient (Upload)

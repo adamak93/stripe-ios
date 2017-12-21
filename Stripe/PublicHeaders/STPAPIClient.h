@@ -127,6 +127,19 @@ static NSString *const STPSDKVersion = @"11.5.0";
 
 @end
 
+#pragma mark Connect Accounts
+
+/**
+ Stripe extensions for working with Connect Accounts
+ */
+@interface STPAPIClient (ConnectAccounts)
+
+- (void)createTokenWithConnectAccount:(id)obj completion:(__nullable STPTokenCompletionBlock)completion;
+
+@end
+
+#pragma mark Upload
+
 /**
  STPAPIClient extensions to upload files.
  */
